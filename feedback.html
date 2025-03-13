@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Feedback</title>
+    <link rel="stylesheet" href="aboutus.css">
+    <link rel="stylesheet" href="header.css">
+    <link rel="stylesheet" href="feedback.css">
+    <script defer src="feedback.js"></script>
+    <script src="script.js"></script>
+    <script src="cartscript.js"></script>
+    <link rel="stylesheet" href="footer.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="shortcut icon" href="images/logo_inverted.png" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="nav">
+            <div class="topnav">
+                <ul>
+                    <li><a href="feedback.html">Send us feedback  &nbsp&nbsp&nbsp|</a></li>
+                    <li><a href="contactus.html">Contact us </a></li> 
+                </ul>
+            </div>
+            <nav class="navbar">
+                <div class="logo"> <a href="home.html"><img width = "60px" src="images/logo.jpg" alt="logo"></a></div>            
+                <div class="nav-links">
+                <!-- NAVIGATION MENUS -->
+                    <div class="menu">
+                        <div class="line-effect">
+                            <ul>
+                                <li class="products"><a href="home.html">Product</a>
+                                    <!-- DROPDOWN MENU -->
+                                    <ul class="dropdown">
+                                        <li><a href="top.html">Top & T-shirt</a></li>           
+                                        <li><a href="short.html">Shorts</a></li>   
+                                        <li><a href="shoe.html">Shoes</a></li>           
+                                        <li><a href="accessory.html">Accessories and Equipment</a></li>              
+                                    </ul>
+                                </li>
+                                <li><a href="membership.html">Membership</a></li>
+                                <li><a href="aboutus.html">About Us</a></li>
+
+                            </ul>
+                        </div>
+						<div class="cart">
+							<a href="cart.html">
+								<img src="images/cart.png" width="32px" alt="cart" >
+								<span class="cart-count"></span>
+							</a>
+						</div>
+                    </div>
+                    <script>header()</script>
+                </div>
+            </nav>
+            <div class="btmnav">
+                <marquee behavior="scroll" direction="left">Free Member Shipping Discount <a href="membership.html">View more</a></marquee>
+            </div>
+        </div>
+    </header>
+    <section class="feedback">
+        <div class="rating-box">
+            <h1>How was your experience?</h1>
+            <div class="rate">
+                <input type="radio" id="star1" name="rate" value="1" />
+                <label for="star5" title="text">1 stars</label>
+                <input type="radio" id="star2" name="rate" value="2" />
+                <label for="star4" title="text">2 stars</label>
+                <input type="radio" id="star3" name="rate" value="3" />
+                <label for="star3" title="text">3 stars</label>
+                <input type="radio" id="star4" name="rate" value="4" />
+                <label for="star2" title="text">4 stars</label>
+                <input type="radio" id="star5" name="rate" value="5" />
+                <label for="star1" title="text">5 star</label>
+            </div>
+            <form id="form" action="/">
+                <h1>Leave a comment!</h1>
+                <div class="input-control">
+                    <label for="comment">We would love to hear your feedback! What was positive? What can we improve?</label>
+                    <input id="comment" name="comment" type="text">
+                    <div class="error"></div>
+                </div>
+            
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+    <footer>
+        <div id="footer">
+            <p id="find">Our Store</p>
+            <div id="social">
+                <p id="flw">Follow Us</p>
+                <br>
+                <a href="#" class="fa fa-facebook"></a>
+                <a href="https://www.instagram.com/flash_sport69/" class="fa fa-instagram"></a>
+                <a href="#" class="fa fa-twitter"></a>
+                <a href="#" class="fa fa-youtube"></a>
+            </div>
+                <div style="float:right; margin-right: 300px;">
+                    <div id="help">
+                        <p>Our Company</p>
+                        <div id="details">
+                        <a href="news.html">News</a><br>
+                        <a href="">Payment Method</a><br>
+                        <a href="">Join Our Careers</a><br>
+                    </div>
+                </div>
+           </div>
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31870.377425867617!2d101.6164!3d3.148148!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4ed29f2fe42f%3A0xfd81eb3a4d9eb904!2s1%20Utama%20Shopping%20Centre!5e0!3m2!1sen!2smy!4v1683399591120!5m2!1sen!2smy"
+                 width="450" height="300"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            <div id="footerdown">
+                &#128205;
+                <a href="https://www.google.com/maps?ll=3.148148,101.6164&z=12&t=m
+                &hl=en-US&gl=MY&mapclient=embed&cid=18267140199234320644"> Location</a>
+                <div id="term">
+                    
+                    <a href="#">Guides</a>
+                    <a href="terms.html">Terms of Condition</a>
+                    <a href="#">Terms of Use</a>
+                    <a href="#">Privacy Policy</a>
+                </div>
+            </div>
+            <div id="copyright">
+                <p >&copy;2023 HX Sport House</p>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

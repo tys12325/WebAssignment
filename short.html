@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Bottom</title>
+	<link rel="stylesheet" href="productstyle.css">
+	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="productfooter.css">
+	<script src="script.js"></script>
+	<script src="cartscript.js"></script>
+	<link rel="shortcut icon" href="images/logo_inverted.png" type="image/x-icon">
+</head>
+	<body>
+		<audio  id="myAudio" controls autoplay loop src="song/background.mp3" ></audio>
+		
+		<script>
+		var audio = document.getElementById("myAudio");
+		audio.volume = 0.1; // set initial volume to 30%
+	  </script>
+	  <script>
+		var audio = document.getElementById("myAudio");
+
+		function setmute(){
+			audio.volume= 0.0
+
+		}
+
+		function setvolume(){
+			audio.volume=0.1
+		}
+	  </script>
+		<header>
+			<div id="nav">
+				<div class="topnav">
+					<ul>
+						<li><a href="feedback.html">Send us feedback  &nbsp&nbsp&nbsp|</a></li>
+						<li><a href="contactus.html">Contact us </a></li> 
+					</ul>
+				</div>
+				<nav class="navbar">
+					<div class="logo"> <a href="home.html"><img width = "60px" src="images/logo.jpg" alt="logo"></a></div>            
+					<div class="nav-links">
+					<!-- NAVIGATION MENUS -->
+						<div class="menu">
+							<div class="line-effect">
+								<ul>
+									<li class="products"><a href="home.html">Product</a>
+										<!-- DROPDOWN MENU -->
+										<ul class="dropdown">
+											<li><a href="top.html">Top & T-shirt</a></li>           
+											<li><a href="short.html">Shorts</a></li>   
+											<li><a href="shoe.html">Shoes</a></li>           
+											<li><a href="accessory.html">Accessories and Equipment</a></li>              
+										</ul>
+									</li>
+									<li><a href="membership.html">Membership</a></li>
+									<li><a href="aboutus.html">About Us</a></li>
+									</li>
+								</ul>
+							</div>
+							<div class="cart">
+								<a href="cart.html">
+									<img src="images/cart.png" width="32px" alt="cart" class="shop-icon">
+									<span class="cart-count"></span>
+								</a>
+							</div>
+						</div>
+						<script>header()</script>
+					</div>
+				</nav>
+				<div class="btmnav">
+					<marquee behavior="scroll" direction="left">Free Member Shipping Discount <a href="membership.html">View more</a></marquee>
+				</div>
+			</div>
+		</header>
+		<main>
+			<div class="row">
+				<div class="headerimg"><img src="images/bottomheader.jpg" alt="bottomheader"></div>
+				<div class="flash">Flash Theme Song</div>
+				<button onclick="setmute()" type="button" id="mute">&#x1F507</button><br> 
+				<button onclick="setvolume()" type="button" id="volume">&#128266</button><br> 
+				<h1>Shorts Product</h1>
+				<div class="product">
+					<div class="productborder">
+						<img src="images/bottom/bottom1.jpg"alt="top1">
+						<h2>FLASH RING TRACK</h2>
+						<p class="price">$125.00</p>
+						<label for="size">Select Size:</label>
+						<select id="btmsize1">
+							<option value="S">S</option>
+							<option value="M">M</option>
+							<option value="L">L</option>
+							<option value="XL">XL</option>
+						</select>
+					</div>
+		
+					<button class="add-to-cart" onclick="addToCart('FLASH RING TRACK', 125.00,1,'images/bottom/bottom1.jpg',document.getElementById('btmsize1').value)">Add to Cart</button>
+				</div>
+			
+				<div class="product">
+					<div class="productborder">
+						<img src="images/bottom/bottom2.jpg" alt="top2">
+						<h2>FLASH FLIGHT MVP</h2>
+						<p class="price">$178.00</p>
+						<label for="size">Select Size:</label>
+						<select id="btmsize2">
+							<option value="S">S</option>
+							<option value="M">M</option>
+							<option value="L">L</option>
+							<option value="XL">XL</option>
+						</select>
+					</div>
+		
+					<button class="add-to-cart" onclick="addToCart('FLASH FLIGHT MVP', 178.00,1,'images/bottom/bottom2.jpg',document.getElementById('btmsize2').value)">Add to Cart</button>
+				</div>
+			
+				<div class="product">
+					<div class="productborder">
+						<img src="images/bottom/bottom3.jpg" alt="top3">
+						<h2>FLASH 69 EAGLE</h2>
+						<p class="price">$99.00</p>
+						<label for="size">Select Size:</label>
+						<select id="btmsize3">
+							<option value="S">S</option>
+							<option value="M">M</option>
+							<option value="L">L</option>
+							<option value="XL">XL</option>
+						</select>
+					</div>
+		
+					<button class="add-to-cart" onclick="addToCart('FLASH 69 EAGLE', 99.00,1,'images/bottom/bottom3.jpg',document.getElementById('btmsize3').value)">Add to Cart</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="product">
+					<div class="productborder">
+						<img src="images/bottom/bottom4.jpg" alt="top4">
+						<h2>FLASH WHITE-OFF</h2>
+						<p class="price">$168.00</p>
+						<label for="size">Select Size:</label>
+						<select id="btmsize4">
+							<option value="S">S</option>
+							<option value="M">M</option>
+							<option value="L">L</option>
+							<option value="XL">XL</option>
+						</select>
+					</div>
+		
+					<button class="add-to-cart" onclick="addToCart('Sport yoga Pants women', 168.00,1,'images/bottom/bottom4.jpg',document.getElementById('btmsize4').value)">Add to Cart</button>
+				</div>
+			
+				<div class="product">
+					<div class="productborder">
+						<img src="images/bottom/bottom5.jpg" alt="top5">
+						<h2>FLASH PRO-FIT CHALLENGER</h2>
+						<p class="price">$199.00</p>
+						<label for="size">Select Size:</label>
+						<select id="btmsize5">
+							<option value="S">S</option>
+							<option value="M">M</option>
+							<option value="L">L</option>
+							<option value="XL">XL</option>
+						</select>
+					</div>
+		
+					<button class="add-to-cart" onclick="addToCart('FLASH PRO-FIT CHALLENGER', 199.00,1,'images/bottom/bottom5.jpg',document.getElementById('btmsize5').value)">Add to Cart</button>
+				</div>
+			
+				<div class="product">
+					<div class="productborder">
+						<img src="images/bottom/bottom6.jpg" alt="top6">
+						<h2>FLASH CHICAGO</h2>
+						<p class="price">$188.00</p>
+						<label for="size">Select Size:</label>
+						<select id="btmsize6">
+							<option value="S">S</option>
+							<option value="M">M</option>
+							<option value="L">L</option>
+							<option value="XL">XL</option>
+						</select>
+					</div>
+					<button class="add-to-cart" onclick="addToCart('FLASH CHICAGO', 188.00,1,'images/bottom/bottom6.jpg',document.getElementById('btmsize6').value)">Add to Cart</button>
+				</div>
+			</div>
+			<div class="row">
+				<div class="product">
+					<div class="productborder">
+						<img src="images/bottom/bottom7.jpg" alt="top7">
+						<h2>FLASH TRACK</h2>
+						<p class="price">$119.00</p>
+						<label for="size">Select Size:</label>
+						<select id="btmsize7">
+							<option value="S">S</option>
+							<option value="M">M</option>
+							<option value="L">L</option>
+							<option value="XL">XL</option>
+						</select>
+					</div>
+		
+					<button class="add-to-cart" onclick="addToCart('FLASH TRACK', 119.00,1,'images/bottom/bottom7.jpg',document.getElementById('btmsize7').value)">Add to Cart</button>
+				</div>
+			
+				<div class="product">
+					<div class="productborder">
+						<img src="images/bottom/bottom8.jpg" alt="top8">
+						<h2>FLASH TOP-PANTS 88</h2>
+						<p class="price">$399.00</p>
+						<label for="size">Select Size:</label>
+						<select id="btmsize8">
+							<option value="S">S</option>
+							<option value="M">M</option>
+							<option value="L">L</option>
+							<option value="XL">XL</option>
+						</select>
+					</div>
+		
+					<button class="add-to-cart" onclick="addToCart('FLASH TOP-PANTS 88', 399.00,1,'images/bottom/bottom8.jpg',document.getElementById('btmsize8').value)">Add to Cart</button>
+				</div>
+			
+				<div class="product">
+					<div class="productborder">
+						<img src="images/bottom/bottom9.jpg" alt="top9">
+						<h2>FLASH UTILITY ESC</h2>
+						<p class="price">$222.00</p>
+						<label for="size">Select Size:</label>
+						<select id="btmsize9">
+							<option value="S">S</option>
+							<option value="M">M</option>
+							<option value="L">L</option>
+							<option value="XL">XL</option>
+						</select>
+					</div>
+					<button class="add-to-cart" onclick="addToCart('FLASH UTILITY ESC', 222.00,1,'images/bottom/bottom9.jpg',document.getElementById('btmsize9').value)">Add to Cart</button>
+				</div>
+			</div>
+
+			<div class="pagenum">
+				<nav>
+					<ul>
+						<li><a href="top.html">&#10094;</a></li>
+						<li><a href="top.html">1</a></li>
+						<li class="highlighted"><a href="short.html">2</a></li>
+						<li><a href="shoe.html">3</a></li>
+						<li><a href="accessory.html">4</a></li>
+						<li><a href="shoe.html">&#10095;</a></li>
+					</ul>
+				</nav>
+			</div>
+		</main>
+		<footer>
+			<footer>
+				<div id="footer">
+					<p id="find">Our Store</p>
+					<div id="social">
+						<p id="flw">Follow Us</p>
+						<br>
+						<a href="#"  style="color:azure" class="fa fa-facebook"></a>
+						<a  style="color:azure"  href="https://www.instagram.com/flash_sport69/" class="fa fa-instagram"></a>
+						<a href="#" style="color: rgb(29,161,242);" class="fa fa-twitter"></a>
+						<a href="#" style="color: rgb(242, 0, 0);" class="fa fa-youtube"></a>
+					</div>
+						<div style="float:center; margin-right: 300px;">
+							<div id="help">
+								<p>Our Company</p>
+								<div id="details">
+								<a href="news.html">News</a><br>
+								<a href="">Payment Method</a><br>
+								<a href="">Join Our Careers</a><br>
+							</div>
+						</div>
+				   </div>
+						<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31870.377425867617!2d101.6164!3d3.148148!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4ed29f2fe42f%3A0xfd81eb3a4d9eb904!2s1%20Utama%20Shopping%20Centre!5e0!3m2!1sen!2smy!4v1683399591120!5m2!1sen!2smy"
+						 width="450" height="300"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+					<div id="footerdown">
+						<div id="term" >
+							
+							<div id="locate">
+								<a  href="https://www.google.com/maps?ll=3.148148,101.6164&z=12&t=m
+							&hl=en-US&gl=MY&mapclient=embed&cid=18267140199234320644">&#128205; Location</a>
+							</div>
+							<div id="term2">
+								<a href="#">Guides</a>
+								<a href="terms.html">Terms of Condition</a>
+								<a href="#">Terms of Use</a>
+								<a href="#">Privacy Policy</a>
+							</div>
+						</div>
+					
+					
+					</div>
+					<div id="copyright">
+						<p >&copy;2023 Flash Sport House.All Rights Reserved</p> 
+					</div>
+				</div>
+			</footer>
+	</body>
+
+</html>

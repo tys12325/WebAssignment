@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="login.css">
+    <script src="login.js"></script>
+    <link rel="shortcut icon" href="images/logo_inverted.png" type="image/x-icon">
+    
+
+</head>
+
+<style>
+    .loading-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    z-index: 1;
+    background-color: rgba(240, 237, 237, 0.6);
+    }
+
+    .loading {
+    border: 10px solid rgba(0, 0, 0, 0.1);
+    border-top: 10px solid black;
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    animation: spin 1s ease-in-out infinite;
+    }
+
+    @keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+    }
+
+    .rmbme{
+        position: relative;
+        z-index: 1;
+    }
+
+  </style>
+
+
+<body>
+
+    <div class="loading-container">
+        <div class="loading"></div>
+      </div>
+
+    <main>
+        <div class="membership"><img src="images/login.jpg" height="750px" width="800px" alt="membership">
+            <div class="login">
+                <div class="logo"><img src="images/logo.jpg" alt="logo"></div>
+                <div class="sporthouse"><p>Flash Sports House</p></div>
+                <div class="topic"><p>Login</p></div>
+
+                <form name="logindetails" id="logindetails" action="home.html"  method="get">
+                    
+                    <p>User Name</p><input type="text" id="username" class="user" placeholder="Enter Your Username" required><br><br>
+                    <p>Password</p><input type="password" id="password" class="user" placeholder="Enter Your Password" required><br><br>
+                    <div class="rmbme">
+                        <input type="checkbox"><label for="remember">Remember Me</label>
+                    </div>
+                    <input type="submit" value="Log In" id="loginbtn">
+                </form>
+                <input type="submit" value="Return to Register Page" id="backtoregisterbtn" required onclick="window.location.href='register.html'">
+
+            </div>
+        </div>
+    </main>
+    </body>
+    
+</html>

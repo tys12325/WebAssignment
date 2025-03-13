@@ -1,0 +1,106 @@
+.login{
+    height: 550px;
+    width: 500px;
+    position: absolute;
+    right: 5%;
+    transform: translateX(50%);
+    transform: translateY(-125%);
+    font-size: 20px; 
+    text-decoration:solid;
+    font-family:fantasy;
+}
+
+.topic{
+    text-align: center;
+    font-size: 30px;
+    text-decoration: underline;
+}
+
+
+.user{
+    position: absolute;
+    width: 70%;
+    height: 40px;
+    border-radius: 7px;
+    border: ridge;
+}
+
+
+.sporthouse{
+    font-style: italic;
+    text-align: center;
+    font-size: 50px;
+
+}
+
+#loginbtn:hover{
+    color: rgb(rgb(83, 80, 80), rgb(82, 85, 82), rgb(58, 58, 63));
+    cursor: pointer;
+    box-shadow: 1px 1px gray;
+}
+
+
+
+#loginbtn{
+
+    position: absolute;
+    border-radius: 12px;
+    transform: translateY(700%);
+    bottom: 75%;
+    width: 35%;
+    height: 60px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: black;
+    text-decoration: none;
+    color:white;
+    justify-content: space-between;
+    z-index: 700%;
+}
+
+.loginbtn>a{
+    text-decoration: none;
+    color: white;
+}
+
+.membership>img{
+
+   margin-top: auto;
+
+}
+
+.logo{
+    position: absolute;
+    top: 9%;
+    width: 500px;
+    height: 500px;
+    left: -10%;
+}
+
+label{
+    font-size: .65em;
+    max-width: 100px;
+}
+
+#backtoregisterbtn{
+    position: absolute;
+    border-radius: 12px;
+    right: 25%;
+    transform: translateY(800%);
+    bottom: 86%;
+    width: 35%;
+    height: 60px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: black;
+    text-decoration: none;
+    color:white;
+    justify-content: space-between;
+}
+
+
+#backtoregisterbtn:hover{
+    color: rgb(rgb(101, 99, 99), rgb(101, 100, 99), rgb(97, 96, 95));
+    cursor: pointer;
+    box-shadow: 1.5px 1.5px rgb(236, 233, 233);
+}

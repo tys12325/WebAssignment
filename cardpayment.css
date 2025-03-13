@@ -1,0 +1,128 @@
+*{
+    margin: 0 auto;
+}
+
+img{
+    padding-right: 60px;
+    padding-left: 60px;
+}
+
+form{
+    background: white;
+    padding: 20px;
+    width: 620px;
+    padding-top: 200px;
+}
+
+.inputBox{
+    padding-top: 20px;
+    width: 100%;
+    
+}
+
+.inputBox input,
+.inputBox select{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    border:1px solid black;
+}
+
+.shortinput{
+    display: flex;
+    gap:15px;
+}
+
+
+.card-container{
+    margin-bottom: -150px;
+    position: relative;
+    height: 250px;
+    width: 400px;
+}
+
+
+.front{
+    position: absolute;
+    height: 250px;
+    width: 400px;
+    background:linear-gradient( lightblue,lightgray);
+    border-radius: 5px;
+    backface-visibility: hidden; 
+    box-shadow: 0.5px 0.5px grey ;
+    padding:20px;
+    transition:transform .5s ease-out;
+}
+
+.cardimage{
+    display: flex;
+    padding-top: 10px;
+}
+
+.cardimage{
+    height: 50px;
+}
+
+.card-number-box{
+    padding:30px 0;
+    font-size: 1.4em;
+    color:white;
+}
+
+.flexbox{
+    display: flex;
+    margin-top: 30px;
+    gap:180px;
+}
+
+.front{
+    font-size: 1em;
+    color:white;
+}
+
+.back{
+    position: absolute;
+    height: 250px;
+    width: 400px;
+    background:linear-gradient( lightblue,lightgray);
+    border-radius: 5px;
+    text-align: right;
+    box-shadow: 0.5px 0.5px grey ;
+    backface-visibility: hidden; 
+    transform: rotateY(180deg);
+    transition:transform .5s ease-out;
+    color: white;
+}
+
+.stripe{
+    background: black;
+    width: 100%;
+    margin: 10px 0;
+    height: 50px;
+}
+
+.cvv{
+    height: 50px;
+    padding: 10px;
+    margin-top: 5px;
+    background-color: white;
+    color: black;
+    border-radius: 5px;
+}
+
+.back img{
+    height: 25px;
+    position: relative;
+    right: -12%;
+    margin-top: 60px;
+}
+
+.navigation{
+    margin-top: 40px;
+}
+
+.submitbtn input{
+    position: absolute;
+    margin-left: 500px;
+}
+

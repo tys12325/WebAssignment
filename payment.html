@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Payment</title>
+	<link rel="stylesheet" href="payment.css">
+	<link rel="stylesheet" href="cardpayment.css">
+	<script src="cardpayment.js"></script>	
+	<link rel="shortcut icon" href="images/logo_inverted.png" type="image/x-icon">
+</head>
+<body>
+	<header style="text-align: center;">
+		<span class="highlighted">
+			<span class="large-circled-number">1</span> <hr class="long-line"> <span class="large-circled-number">2</span><hr class="long-line">
+            <span class="large-circled-number">3</span>
+		</span>
+		 <hr class="long-line">  <span class="large-circled-number">4</span>
+         <div class="details">
+            <ul>
+                <li><div class="highlighted">INFORMATION</div></li>
+				<li><div class="highlighted">SHIPPING</div></li>
+				<li><div class="highlighted">PAYMENT</div></li>
+				<li>COMPLETE</li>
+            </ul>
+         </div>
+	</header>
+	<main>
+		<div class="card-container">
+			<div class="front">
+				<div class="cardimage">
+					<img src="images/chip.png" alt="">
+					<img src="images/visa.png" alt="">
+				</div>
+				<div class="card-number-box">################</div>
+				<div class="flexbox">
+					<div class="box">
+						<span>CARD HOLDER</span>
+						<div class="card-holder-name">FULL NAME</div>
+					</div>
+					<div class="box">
+						<span>EXPIRES</span>
+						<div class="expiration">
+							<span class="exp-month">MM</span>
+							<span class="exp-year">YY</span>
+						</div>
+					</div>
+				</div>
+			</div>
+	
+			<div class="back">
+				<div class="stripe"></div>
+				<div class="box">
+					<span>CVV</span>
+					<div class="cvv"></div>
+					<img src="images/visa.png" alt="visa">
+				</div>
+			</div>
+	
+		</div>
+
+		<form action="complete.html"  onsubmit=" alert('Payment Completed')">
+			<div class="inputBox">
+				<span>CARD NUMBER</span>
+				<input type="text" maxlength="16" class="card-number-input" required>
+			</div>
+			<div class="inputBox">
+				<span>CARD HOLDER</span>
+				<input type="text" class="card-holder-input" required>
+			</div>
+			<div class="shortinput">
+				<div class="inputBox">
+					<span>EXPIRATION MM</span>
+					<select name="month" id="month" class="month-input" required>
+						<option value="" disabled selected hidden>Month</option>
+						<option value="01">01</option>
+						<option value="02">02</option>
+						<option value="03">03</option>
+						<option value="04">04</option>
+						<option value="05">05</option>
+						<option value="06">06</option>
+						<option value="07">07</option>
+						<option value="08">08</option>
+						<option value="09">09</option>
+						<option value="10">10</option>
+						<option value="11">11</option>
+						<option value="12">12</option>
+					</select>
+				</div>
+				<div class="inputBox">
+					<span>EXPIRATION YY</span>
+					<select name="year" id="year" class="year-input" required>
+						<option value="" disabled selected hidden>Year</option>
+						<option value="2023">2023</option>
+						<option value="2024">2024</option>
+						<option value="2025">2025</option>
+						<option value="2026">2026</option>
+						<option value="2027">2027</option>
+						<option value="2028">2028</option>
+					</select>
+				</div>
+				<div class="inputBox">
+					<span>CVV</span>
+					<input type="text" maxlength="4" class="cvv-input" placeholder="123" required>
+				</div>
+			</div>
+			<div class="submitbtn">
+				<input type="submit" value="Complete Your Payment">
+			</div>
+		</form>
+		<script src="cardpayment.js"></script> 
+		<div class="navigation">
+			<nav>
+				<li><a href="delivery.html">Back To Delivery Page</a></li>
+			</nav>
+		</div>
+
+
+	</main>
+
+
+	<footer>
+
+	</footer>
+</body>
+</html>

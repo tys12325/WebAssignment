@@ -1,0 +1,117 @@
+.video-container {
+  position: relative;
+  width: 100%;
+  height: 800px; 
+  overflow: hidden;
+}
+
+video {
+  position: absolute;
+  top: 0%;
+  z-index: 1;
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* scale video to fit container without distorting */
+}
+
+.content {
+  position: absolute;
+  top: 70%;
+  right: 8%;
+  z-index: 1;
+  text-align: right;
+  color:white;
+}
+
+.content2 {
+  position: absolute;
+  top: 65%;
+  margin-left: 100px;
+  z-index: 1;
+  text-align: left;
+  color: white;
+}
+
+.content>p , .content2>p{
+  color: white;
+}
+
+  p {
+    color: white;
+    font-size: 1em;
+
+  }
+  
+  button {
+    font-size: 1em;
+    padding: 2px;
+    background-color: #fff;
+    color: black;
+    cursor: pointer;
+  }
+
+  .content2>button{
+    margin-left: 10px;
+  }
+  
+
+
+/*Hide part of the video controls*/
+video::-webkit-media-controls-time-remaining-display{display: none;}
+video::-webkit-media-controls-fullscreen-button {display: none;}
+video::-webkit-media-controls-current-time-display{display: none;}
+video::-webkit-media-controls-timeline{display: none;}
+video::-webkit-media-controls-play-button {display: none;}
+
+
+/*body{
+    background-image: url(images/bg.jpg);
+}*/
+
+
+.shopbtn{
+  z-index: -1;
+  opacity: 80%;
+  position: absolute;
+  right: 3.2%;
+  padding: 13px 15px;
+  margin-top: 12px;
+  font-family: 'Times New Roman', Times, serif;
+  box-shadow: 1.5px 1.5px;
+  color: grey;
+}
+
+.shopbtn:hover,.shopbtn2:hover{
+  background-color: white;
+  border: white solid 1px;
+  opacity: 90%;
+}
+
+.shopbtn2{
+  z-index: -1;
+  opacity: 80%;
+  margin-left: 80px;
+  padding: 13px 15px;
+  margin-top: 12px;
+  font-family: 'Times New Roman', Times, serif;
+  box-shadow: 1.5px 1.5px;
+  color: grey;
+}
+
+.shopbtn2 a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+}
+
+p{
+  color: black
+}
+
+.shopbtn a{
+  text-decoration: none;
+  color: black;
+  font-weight: bold;
+  font-size: 1em;
+}

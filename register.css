@@ -1,0 +1,84 @@
+.register{
+    height: 650px;
+    width: 500px;
+    position: relative;
+    left: 60%;
+    transform: translateX(50%);
+    transform: translateY(-125%);
+    font-size: 17px; 
+    text-decoration:solid;
+    font-family:fantasy;
+}
+
+.topic{
+    text-align: center;
+    font-size: 25px;
+    text-decoration: underline;
+}
+
+
+.user{
+    position: relative;
+    width: 70%;
+    height: 35px;
+    border-radius: 7px;
+    border: ridge;
+}
+
+.logo{
+    position: relative;
+    bottom: -14%;
+    width: 500px;
+    left: -10%;
+}
+
+#registerbtn{
+    position: absolute;
+    right: 28%;
+    bottom: -19%;
+    padding: 10px;
+    width: 150px;
+    margin-left: 200px;
+    text-align: center;
+    border-radius: 8px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    justify-content: space-between;
+}
+
+#registerbtn:hover{
+    opacity: .8;
+    cursor: pointer;
+}
+
+.sporthouse{
+    font-style: italic;
+    text-align: center;
+    font-size: 40px;
+
+}
+
+.register>a{
+    text-decoration: none;
+    color: white;
+}
+
+.membership>.leftside>img{
+    width: 55%;
+    height: 720px;
+}
+
+label{
+    font-size: .65em;
+    max-width: 100px;
+}
+
+p{
+    max-width: 500px;
+}
+
+.gotologin{
+    font-size: .65em;
+    right: 0%;
+}

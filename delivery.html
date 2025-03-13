@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Delivery Details</title>
+	<link rel="stylesheet" type="text/css" href="cartstyle.css">
+	<link rel="stylesheet" href="payment.css">
+	<script src="cartscript.js"></script>
+	<link rel="shortcut icon" href="images/logo_inverted.png" type="image/x-icon">
+</head>
+<body>
+	<header>
+		<span class="highlighted">
+			<span class="large-circled-number">1</span> <hr class="long-line"> <span class="large-circled-number">2</span>
+		</span>
+		 <hr class="long-line">
+		<span class="large-circled-number">3</span> <hr class="long-line">  <span class="large-circled-number">4</span>
+        <div class="details">
+            <ul>
+                <li><div class="highlighted">INFORMATION</div></li>
+                <li><div class="highlighted">SHIPPING</div></li>
+                <li>PAYMENT</li>
+                <li>COMPLETE</li>
+            </ul>
+        </div>
+	</header>
+
+	<style>
+		#country{
+			height: 1.3cm;
+			width: 11cm;
+			margin-top: 10px;
+			
+			font-weight:bolder;
+			font-family:'Arial, Helvetica, sans-serif';
+			font-size: 20px;
+			
+		}
+		#telephone{
+			margin-bottom: 10px;
+			color:black;
+		}
+		#Fname,#Lname,#Add1,#Add2,#Add3,#state,#em,#pword,#telephone{
+			margin-top: 10px;
+			height: 1.3cm;
+			width: 11cm;
+			opacity: 60%;
+			font-size: 20px;
+			font-family:'Arial, Helvetica, sans-serif';
+			color:black;
+		}
+		#postcode,#city{
+			margin-top: 10px;
+			height: 1.3cm;
+			width: 5cm;
+			opacity: 60%;
+			margin-right: 18px;
+			font-size: 20px;
+			font-family:'Arial, Helvetica, sans-serif';
+			color:black;
+		}
+		#register,#login{
+			text-align: center;
+			border: 0.1px black solid;
+			width: fit-content;
+			padding-left: 10px;
+			padding-right: 10px;
+			margin-top: 10px;
+			background-color: white;
+			box-shadow: 2px 2px black;
+			
+		}
+		#em:hover,#telephone:hover,#Fname:hover,#Lname:hover,#Add1:hover,#Add2:hover,#Add3:hover,#postcode:hover,#city:hover,#state:hover{
+			font-weight: bold;
+			font-size: 20px;
+			font-family:'Arial, Helvetica, sans-serif';
+		}
+		.checkbox{
+			margin-right: 10px;
+			margin-bottom: 10px;
+		}
+		#submit{
+			margin-left: 82px;
+		}
+		#login{
+			text-align: center;
+			border: 0.1px solid black;
+			width: fit-content;
+			padding: 10px;
+			margin-top: 10px;
+
+		}
+		#term{
+			margin-top: 10px;
+		}
+		
+		#check{
+			margin-top: 10px;
+		}
+		
+		
+
+	</style>
+	<script>
+		function info(){
+			if (document.getElementById("check").checked) {
+   			 alert("Your Information Saved");
+			  }			
+		}
+	
+	</script>
+	<main>
+		<h1>Shipping Details</h1>
+		<form action="payment.html" onsubmit="return info()">
+			<div id="login" >
+				<h4>Customer Contact </h4>
+				<input type="email" id="em" required placeholder="  EMAIL ADDRESS"><br>
+				<input type="tel" id="telephone" required placeholder=" TEL(+60)109999999" 
+				pattern="[1]{1}[0-9]{8}|[1]{1}[0-9]{9}|[1]{1}[0-9]{10}" ><br>
+			
+			</div>
+		
+	
+			
+			<div id="register">
+				<input type="text" id="Fname" required placeholder="   FIRST NAME"><br>
+				<input type="text" id="Lname" required placeholder="  LAST NAME"><br>
+				<input type="text" id="Add1" required placeholder="  ADDRESS LINE 1"><br>
+				<input type="text" id="Add2" required placeholder="  ADDRESS LINE 2"><br>
+				<input type="text" id="Add3" required placeholder="  ADDRESS LINE 3"><br>
+				<input type="text" id="postcode" required placeholder="  POSTAL CODE" maxlength="5" size="5"  >
+				<input type="text" id="city" required placeholder="  City"><br>
+				<select name="state" id="state">
+					<option value="">Pulau Penang</option>
+					<option value="">Kuala Lumpur</option>
+					<option value="">Pahang</option>
+					<option value="">Johor</option>
+					<option value="">Kelantan</option>
+					<option value="">Selangor</option>
+					<option value="">Perak</option>
+					<option value="">Melaka</option>
+					<option value="">Negeri Sembilan</option>
+					<option value="">Perlis</option>
+					<option value="">Sabah</option>
+					<option value="">Sarawak</option>
+					<option value="">Kedah</option>
+				</select><br>
+				<input type="text" id="country" readonly value="  MALAYSIA" ><br>
+				
+				<input type="checkbox" class="checkbox" id="check"  >
+				
+				<label class="checkbox">Click here to save shipping details</label>
+			
+			</div>
+			<br>
+			<nav>
+				<li><a href="cart.html" >Back To Cart Page</a></li>
+				
+				<li><input type="submit" id="submit" value="Proceed To Payment" ></li>
+			</nav>
+			
+		</form>
+	
+			
+				
+
+	</main>
+
+
+	<footer>
+
+	</footer>
+</body>
+</html>

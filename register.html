@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Register</title>
+    <link rel="stylesheet" href="register.css">
+    <script src="register.js"></script>
+    <link rel="shortcut icon" href="images/logo_inverted.png" type="image/x-icon">
+</head>
+<body>
+
+<main>  
+    <div class="membership">
+        <div class="leftside">
+            <img src="images/register.jpg" alt="membership">
+        </div>
+        <div class="rightside">
+            <div class="register">
+                <div class="logo"><img src="images/logo.jpg" alt="logo"></div>
+                <div class="sporthouse"><p>Flash Sports House</p></div>
+                <div class="topic"><p>Register</p></div>
+                <form name="registerdetails" id="registerdetails" action="register.html" method="get">
+                    <p>User Name</p><i class="fa-solid fa-user"></i><input type="text" id="username" class="user" placeholder="Enter Your Username" required><br><br>
+                    <p>Password</p><input type="password" id="password" class="user" placeholder="Enter Your Password" required><br><br>
+                    <p>E-mail </p><input type="email" id="email" class="user" placeholder="Enter Your Email" required><br><br>
+                    <p>Date of Birth</p><input type="date" id="date" class="user" required><br><br>
+                    <div class="date"></div>
+                    <input type="checkbox"><label for="terms">By creating an account, you are agreedz to Flash's Privacy Policy <br>&nbsp;&nbsp;&nbsp;&nbsp; and Terms of Use.
+                    </label>
+                    <input type="submit" value="Register" id="registerbtn" required>
+                    <div class="gotologin"><a href="login.html">Already a member? Click to Log In!</a><div>
+
+                </form> 
+            </div>
+        </div>
+    </div>
+</main>

@@ -1,0 +1,29 @@
+.row1{
+    max-width: 100%;
+    min-width: 100%;
+  }
+
+  .news {
+    display:inline-block;
+     /* size of the product image*/
+    margin-top: 100px;
+    margin-bottom: 30px;
+    
+  }
+
+ main{
+  margin-top: 0;
+ }
+
+h3{
+  font-size: 3em;
+}
+
+.news1{
+  display:inline-block;
+     /* size of the product image*/
+    margin-top: 100px;
+    margin-bottom: 30px;
+    margin-left: 10PX;
+    margin-right: 10PX;
+}

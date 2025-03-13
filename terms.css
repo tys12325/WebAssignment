@@ -1,0 +1,25 @@
+h1{
+    text-align: center;
+    font-size: 4em;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-top: 150px;
+    
+}
+
+p {
+    max-width: 1000px;
+    margin:0 auto;
+    margin-top: 20px;
+    line-height: 1.5;
+    font-family: sans-serif;
+}
+
+.underline > p > strong{
+    text-decoration: underline;
+    
+}
+a{
+    color: grey;
+  
+}
+

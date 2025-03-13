@@ -1,0 +1,71 @@
+.membership {
+    margin-top: 90px;
+}
+
+.topic{
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+    transform: translateX(50%);
+    bottom: 55%;
+    font-size: 2.1em;
+    font-family: fantasy;
+}
+
+.description{
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+    transform: translateX(50%);
+    bottom: 45%;
+    font-size: 18px;
+}
+
+.signupbtn{
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+    transform: translateX(50%);
+    bottom: 35%;
+    width: 15%;
+    height: 1cm;
+    text-align: center;
+    border-radius: 8px;
+    background-color: black;
+    text-decoration: none;
+    
+}
+
+.signupbtn>a{
+    text-decoration: none;
+    color: white;
+}
+.terms{
+    position: absolute;
+    bottom: 0;
+    right: 25%;
+    transform: translateX(50%);
+    bottom: 30%;
+}
+
+.terms > a {
+    color: rgb(62, 60, 60);
+    font-size: 1em;
+}
+
+.terms :hover{
+    color: orange;
+}
+
+button:hover{
+    background-color: rgb(48, 51, 49);
+    cursor: pointer;
+    padding: 10px 20px;
+    box-shadow: 2px 2px grey ;
+}
+
+button{
+    padding: 10px 20px;
+    box-shadow: 2px 2px grey ;
+    color: white;
+}

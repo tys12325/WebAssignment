@@ -1,0 +1,104 @@
+/* Cart page part */
+
+
+
+body {
+  background-color: rgb(244, 246, 244);
+  font-family: 'Times New Roman', Times, serif;
+  margin: 0 auto;
+  width: 1550px;
+}
+
+header{
+  text-align: center;
+}
+* {
+  margin: 0 auto;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+
+#cart-items {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid lightgray;
+  margin-bottom: 5px;
+  text-align: center;
+}
+
+.cart-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px;
+  border-bottom: 1px solid lightgray;
+}
+
+.cart-item img {
+  max-width: 150px;
+  max-height: 150px;
+  margin-right: 20px;
+}
+
+#total {
+  text-align: center;
+  font-weight: bold;
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  border: 1px solid #ccc;
+  font-size: 24px;
+}
+
+button {
+  background-color: red;
+  padding: 10px 20px;
+  margin-bottom: 20px;
+  box-shadow: 2px 2px grey ;
+  color: white;
+}
+
+a,#submit{
+  float: left;
+  box-shadow: 2px 2px grey ;
+  margin-left: 25px;
+  background-color: black;
+  color: white;
+  padding: 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+nav>li{
+  list-style-type: none;
+  margin-left:355px;
+}
+
+a:hover {
+  background-color: rgb(82, 87, 83);
+}
+
+.remove-item:hover {
+  background-color: rgb(150, 64, 24);
+}
+
+
+.clearbtn > button{
+  margin-left:380px;
+  margin-top: 30px;
+  background-color: red;
+  padding: 10px;
+  font-size: 18px;
+
+}
+
+button:hover{
+  background-color: rgb(150, 64, 24);
+  cursor: pointer;
+} 
+

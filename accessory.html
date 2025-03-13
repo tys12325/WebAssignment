@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Accessory </title>
+	<link rel="stylesheet" href="productstyle.css">
+	<link rel="stylesheet" href="header.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="productfooter.css">
+	<script src="script.js"></script>
+	<script src="cartscript.js"></script>
+	<link rel="shortcut icon" href="images/logo_inverted.png" type="image/x-icon">
+</head>
+<body>
+	<audio  id="myAudio" controls autoplay loop src="song/background.mp3" ></audio>
+		
+		<script>
+		var audio = document.getElementById("myAudio");
+		audio.volume = 0.1; // set initial volume to 30%
+	  </script>
+	  <script>
+		var audio = document.getElementById("myAudio");
+
+		function setmute(){
+			audio.volume= 0.0
+
+		}
+
+		function setvolume(){
+			audio.volume=0.1
+		}
+	  </script>
+	<header>
+        <div id="nav">
+            <div class="topnav">
+                <ul>
+                    <li><a href="feedback.html">Send us feedback  &nbsp&nbsp&nbsp|</a></li>
+                    <li><a href="contactus.html">Contact us </a></li> 
+                </ul>
+            </div>
+            <nav class="navbar">
+                <div class="logo"> <a href="home.html"><img width = "60px" src="images/logo.jpg" alt="logo"></a></div>            
+                <div class="nav-links">
+                <!-- NAVIGATION MENUS -->
+                    <div class="menu">
+                        <div class="line-effect">
+                            <ul>
+                                <li class="products"><a href="home.html">Product</a>
+                                    <!-- DROPDOWN MENU -->
+                                    <ul class="dropdown">
+                                        <li><a href="top.html">Top & T-shirt</a></li>           
+                                        <li><a href="short.html">Shorts</a></li>   
+                                        <li><a href="shoe.html">Shoes</a></li>           
+                                        <li><a href="accessory.html">Accessories and Equipment</a></li>              
+                                    </ul>
+                                </li>
+                                <li><a href="membership.html">Membership</a></li>
+                                <li><a href="aboutus.html">About Us</a></li>
+                                </li>
+                            </ul>
+                        </div>
+						<div class="cart">
+							<a href="cart.html">
+								<img src="images/cart.png" width="32px" alt="cart" class="shop-icon">
+								<span class="cart-count"></span>
+							</a>
+						</div>
+                    </div>
+                    <script>header()</script>
+                </div>
+            </nav>
+            <div class="btmnav">
+				<marquee behavior="scroll" direction="left">Free Member Shipping Discount <a href="membership.html">View more</a></marquee>
+            </div>
+        </div>
+    </header>
+	<main>
+		<div class="headerimg"><img src="images/accessory.jpg"  alt="accessory"></div>
+		<div class="flash">Flash Theme Song</div>
+				<button onclick="setmute()" type="button" id="mute">&#x1F507</button><br> 
+				<button onclick="setvolume()" type="button" id="volume">&#128266</button><br> 
+		<h1>Accessories Product</h1>
+		<div class="row">
+			<div class="product">
+				<div class="productborder">
+					<img src="images/accesories/1.jpg"alt="produc1">
+					<h2>YOGA MAT</h2>
+					<p class="price">$109.00</p>
+				</div>
+				<button class="add-to-cart" onclick="addToCart('YOGA MAT', 109.00,1,'images/accesories/1.jpg')">Add to Cart</button>
+			</div>
+		
+			<div class="product">
+				<div class="productborder">
+					<img src="images/accesories/2.jpg" alt="product2">
+					<h2>ADJUSTABLE DUMBBELL</h2>
+					<p class="price">$169.00</p>
+				</div>
+				<button class="add-to-cart" onclick="addToCart('ADJUSTABLE DUMBBELL', 169.00,1,'images/accesories/2.jpg')">Add to Cart</button>
+			</div>
+		
+			<div class="product">
+				<div class="productborder">
+					<img src="images/accesories/3.jpg" alt="product3">
+					<h2>RINGS GYM BAG</h2>
+					<p class="price">$150.00</p>
+				</div>
+				<button class="add-to-cart" onclick="addToCart('RINGS GYM BAG', 150.00,1,'images/accesories/3.jpg')">Add to Cart</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="product">
+				<div class="productborder">
+					<img src="images/accesories/4.jpg" alt="product4">
+					<h2>ABS ROLLER</h2>
+					<p class="price">$20.00</p>
+				</div>
+				<button class="add-to-cart" onclick="addToCart('ABS ROLLER', 20.00,1,'images/accesories/4.jpg')">Add to Cart</button>
+			</div>
+			<div class="product">
+				<div class="productborder">
+					<img src="images/accesories/5.jpg" alt="product5">
+					<h2>PRO METAL SHAKER</h2>
+					<p class="price">$25.00</p>
+				</div>
+				<button class="add-to-cart" onclick="addToCart('PRO METAL SHAKER', 25.00,1,'images/accesories/5.jpg')">Add to Cart</button>
+			</div>
+			<div class="product">
+				<div class="productborder">
+					<img src="images/accesories/6.jpg" alt="product6">
+					<h2>2.2L WATER BOTTLE</h2>
+					<p class="price">$49.00</p>
+				</div>
+				<button class="add-to-cart" onclick="addToCart('2.2L WATER BOTTLE', 49.00,1,'images/accesories/6.jpg')">Add to Cart</button>
+			</div>
+		</div>
+		<div class="row">
+			<div class="product">
+				<div class="productborder">
+					<img src="images/accesories/7.jpg" alt="product7">
+					<h2>POWERLIFTING BELT</h2>
+					<p class="price">$150.00</p>
+				</div>
+				<button class="add-to-cart" onclick="addToCart('POWERLIFTING BELT', 150.00,1,'images/accesories/7.jpg')">Add to Cart</button>
+			</div>
+			<div class="product">
+				<div class="productborder">
+					<img src="images/accesories/8.jpg" alt="product8">
+					<h2>WEIGHTED TRAINNING BELT</h2>
+					<p class="price">$90.00</p>
+				</div>
+				<button class="add-to-cart" onclick="addToCart('WEIGHTED TRAINNING BELT', 90.00,1,'images/accesories/8.jpg')">Add to Cart</button>
+			</div>
+			<div class="product">
+				<div class="productborder">
+					<img src="images/accesories/9.jpg" alt="product9">
+					<h2>KNEE STRAPS</h2>
+					<p class="price">$69.00</p>
+				</div>
+				<button class="add-to-cart" onclick="addToCart('KNEE STRAPS', 69.00,1,'images/accesories/9.jpg')">Add to Cart</button>
+			</div>
+		</div>
+        <div class="pagenum">
+            <nav>
+                <ul>
+                    <li><a href="shoe.html">&#10094;</a></li>
+                    <li><a href="top.html">1</a></li>
+                    <li><a href="short.html">2</a></li>
+                    <li><a href="shoe.html">3</a></li>
+                    <li class="highlighted"><a href="accessory.html">4</a></li>
+                </ul>
+            </nav>
+        </div>
+	</main>
+	<footer>
+		<footer>
+			<div id="footer">
+				<p id="find">Our Store</p>
+				<div id="social">
+					<p id="flw">Follow Us</p>
+					<br>
+					<a href="#"  style="color:azure" class="fa fa-facebook"></a>
+					<a  style="color:azure"  href="https://www.instagram.com/flash_sport69/" class="fa fa-instagram"></a>
+					<a href="#" style="color: rgb(29,161,242);" class="fa fa-twitter"></a>
+					<a href="#" style="color: rgb(242, 0, 0);" class="fa fa-youtube"></a>
+				</div>
+					<div style="float:center; margin-right: 300px;">
+						<div id="help">
+							<p>Our Company</p>
+							<div id="details">
+							<a href="news.html">News</a><br>
+							<a href="">Payment Method</a><br>
+							<a href="">Join Our Careers</a><br>
+						</div>
+					</div>
+			   </div>
+					<iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d31870.377425867617!2d101.6164!3d3.148148!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc4ed29f2fe42f%3A0xfd81eb3a4d9eb904!2s1%20Utama%20Shopping%20Centre!5e0!3m2!1sen!2smy!4v1683399591120!5m2!1sen!2smy"
+					 width="450" height="300"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+				<div id="footerdown">
+					<div id="term" >
+						
+						<div id="locate">
+							<a  href="https://www.google.com/maps?ll=3.148148,101.6164&z=12&t=m
+						&hl=en-US&gl=MY&mapclient=embed&cid=18267140199234320644">&#128205; Location</a>
+						</div>
+						<div id="term2">
+							<a href="#">Guides</a>
+							<a href="terms.html">Terms of Condition</a>
+							<a href="#">Terms of Use</a>
+							<a href="#">Privacy Policy</a>
+						</div>
+					</div>
+				
+				
+				</div>
+				<div id="copyright">
+					<p >&copy;2023 Flash Sport House.All Rights Reserved</p> 
+				</div>
+			</div>
+		</footer>
+</body>
+
+</html>
